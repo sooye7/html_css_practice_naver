@@ -1,0 +1,254 @@
+#top{
+    position: relative;
+}
+
+#top h1{
+    color: rgb(54, 206, 54);
+    font-size: 3em;
+    position: absolute;
+    left: 350px;
+    top: 48px;
+}
+
+#top input {
+width: 500px;
+height: 45px;
+border: 3px solid rgb(54, 206, 54);
+position: absolute;
+right: 650px;
+top: 90px;
+}
+
+#top p>a:link, #top p>a:visited{
+    font-size: 1em;
+    color: gray;
+    position: absolute;
+    top: 190px;
+    left: 1150px;
+    text-decoration: none;
+}
+#top p>a:hover{
+    text-decoration: underline;
+}
+
+.searchBtt{
+    width: 55px;
+    height: 53px;
+    background-color: rgb(54, 206, 54);
+    color: white;
+    position: absolute;
+    top: 90px;
+    right: 600px;
+    border: 1px solid rgb(54, 206, 54);
+}
+
+
+#nav1 ul {
+    list-style: none;
+    position: absolute;
+    top: 170px;
+    left: 300px;
+
+}
+
+#nav1 ul li {
+    display: inline-block;
+    color: rgb(54, 206, 54);
+    font-weight: bold;
+    font-size: 1em;
+    margin: 5px;
+}
+
+#nav1 a:link, #nav1 a:visited{
+    color: rgb(54, 206, 54);
+    text-decoration: none;
+}
+
+#nav2 ul {
+    list-style: none;
+    position: absolute;
+    top: 170px;
+    left: 720px;
+
+}
+
+#nav2 ul li {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 5px;
+}
+
+#nav2 a:link, #nav2 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+
+.banner{
+    width: 45%;
+    position: absolute;
+    top: 250px;
+    left: 350px;
+}
+
+/* 로그인 form */
+/*
+#login {
+    width: 350px;
+    position: absolute;
+    top: 250px;
+    left: 1200px;
+}
+
+#login ul{
+    list-style: none;
+}
+
+#login input[type="submit"], #login input[type="reset"], #login button{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(54, 206, 54);
+    border: 1px solid white;
+    color: white;
+    float: right;
+
+}
+*/
+
+#member{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);  
+    grid-template-rows: repeat(3,47px);
+    position: absolute;
+    top: 250px;
+    left: 1150px;
+    background-color: rgba(241, 241, 241, 0.863);
+    grid-template-areas: 
+    "profile profile profile profile profile"
+    "profile profile profile profile profile"
+    "alarm subscribe mail cafe blog";
+    border: 1px solid rgba(196, 196, 196, 0.5);
+}
+
+.category {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 3.5mm;
+}
+
+.profile{
+    grid-area: profile;
+}
+.profile > img{
+    width: 20%;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.alarm{
+    grid-area: alarm;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+}
+.subscribe{
+    grid-area: subscribe;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+}
+.mail{
+    grid-area: mail;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+}
+.cafe{
+    grid-area: cafe;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+
+}
+.blog{
+    grid-area: blog;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+}
+
+#newsBox{
+    width: 770px;
+    height: 40px;
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    background-color: rgba(243, 243, 243, 0.719);
+    border: 1px solid rgb(177, 177, 177);
+}
+/*
+#press {
+    width: 770px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);  
+    grid-template-rows: repeat(4,50px);
+    position: absolute;
+    top: 480px;
+    left: 350px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(177, 177, 177);
+    grid-template-areas: 
+    "press1 press2 press3 press4 press5 press6"
+    "press7 press8 press9 press10 press11 press12"
+    "press13 press14 press15 press16 press17 press18"
+    "press19 press20 press21 press22 press23 press24";
+}
+*/
+/*
+.press1 {grid-area: press1;  border: 1px solid rgb(177, 177, 177);}
+.press2 {grid-area: press2;  border: 1px solid rgb(177, 177, 177);}
+.press3 {grid-area: press3;  border: 1px solid rgb(177, 177, 177);}
+.press4 {grid-area: press4;  border: 1px solid rgb(177, 177, 177);}
+.press5 {grid-area: press5;  border: 1px solid rgb(177, 177, 177);}
+.press6 {grid-area: press6;  border: 1px solid rgb(177, 177, 177);}
+.press7 {grid-area: press7;  border: 1px solid rgb(177, 177, 177);}
+.press8 {grid-area: press8;  border: 1px solid rgb(177, 177, 177);}
+.press9 {grid-area: press9;  border: 1px solid rgb(177, 177, 177);}
+.press10 {grid-area: press10;  border: 1px solid rgb(177, 177, 177);}
+.press11 {grid-area: press11;  border: 1px solid rgb(177, 177, 177);}
+.press12 {grid-area: press12;  border: 1px solid rgb(177, 177, 177);}
+.press13 {grid-area: press13;  border: 1px solid rgb(177, 177, 177);}
+.press14 {grid-area: press14;  border: 1px solid rgb(177, 177, 177);}
+.press15 {grid-area: press15;  border: 1px solid rgb(177, 177, 177);}
+.press16 {grid-area: press16;  border: 1px solid rgb(177, 177, 177);}
+.press17 {grid-area: press17;  border: 1px solid rgb(177, 177, 177);}
+.press18 {grid-area: press18;  border: 1px solid rgb(177, 177, 177);}
+.press19 {grid-area: press19;  border: 1px solid rgb(177, 177, 177);}
+.press20 {grid-area: press20;  border: 1px solid rgb(177, 177, 177);}
+.press21 {grid-area: press21;  border: 1px solid rgb(177, 177, 177);}
+.press22 {grid-area: press22;  border: 1px solid rgb(177, 177, 177);}
+.press23 {grid-area: press23;  border: 1px solid rgb(177, 177, 177);}
+.press24 {grid-area: press24;  border: 1px solid rgb(177, 177, 177);}
+*/
+
+#pressTable table{
+    width: 770px;
+    height: 300px;
+    position: absolute;
+    top: 480px;
+    left: 350px;
+    border: 1px solid rgb(177, 177, 177);
+    border-collapse: collapse;
+}
+
+#pressTable tr td{
+    width: 100px;
+    border: 1px solid rgb(177, 177, 177);
+}
+#pressTable img{
+    width: 50%;
+    display: block;
+    margin: 0px auto;
+}
+#pressTable a>img:link, #pressTable a>img:visited{
+    
+}
+#pressTable img:hover {
+
+}
+
+

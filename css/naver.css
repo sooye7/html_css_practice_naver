@@ -244,11 +244,26 @@ top: 90px;
     display: block;
     margin: 0px auto;
 }
-#pressTable a>img:link, #pressTable a>img:visited{
-    
-}
-#pressTable img:hover {
 
+.pressName:hover {
+    transition: 0.5s;
+}
+
+.selectPress>button {
+    background-color: rgba(241, 241, 241, 0.863);
+    border: 1px solid rgba(241, 241, 241, 0.863);
+    text-align: center;
+    margin: 0px auto;
+    opacity: 0; 
+}
+
+.news:hover .pressName {
+    opacity: 0; 
+}
+  
+.news:hover .selectPress>button {
+   opacity: 1; 
+    transition: 0.5s;
 }
 
 

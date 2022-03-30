@@ -225,7 +225,7 @@ top: 90px;
 .press24 {grid-area: press24;  border: 1px solid rgb(177, 177, 177);}
 */
 
-#pressTable table{
+#pressTable>table{
     width: 770px;
     height: 300px;
     position: absolute;
@@ -235,10 +235,9 @@ top: 90px;
     border-collapse: collapse;
 }
 
-#pressTable tr td{
+#pressTable tr, #pressTable td{
     width: 100px;
     border: 1px solid rgb(177, 177, 177);
-
 }
 #pressTable img{
     width: 50%;
@@ -246,25 +245,24 @@ top: 90px;
     margin: 0px auto;
 }
 
-.selectPress{   
-     margin: auto;
-}
-
-.selectPress>button {
-    background-color: rgba(241, 241, 241, 0.863);
-    border: 1px solid rgba(241, 241, 241, 0.863);
-    text-align: center;
-    padding: 3px;
-    margin: 0px auto;
-    opacity: 0; 
-}
-
-.news:hover .pressName {
-    opacity: 0; 
+.pressImg:hover {
+    opacity: 0;
 }
   
-.news:hover .selectPress>button {
-   opacity: 1; 
+.pressImg:hover .newsButton {
+    display: block;
+}
+
+
+.newsButton {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid gray;
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 auto;
+   display: none;
 }
 
 
